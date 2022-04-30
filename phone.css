@@ -1,0 +1,11 @@
+/*phone 180-767px*/
+@media only screen and (min-device-width : 180px) and (max-device-width :  767px) and (orientation : portrait) { 
+    .calculator{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+        margin: 0 0;
+        background: #131417;
+    }
+}

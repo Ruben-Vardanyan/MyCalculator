@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="My Calculator">
+	<title>My Calculator</title>
+	<link rel="icon" sizes="32x32" type="image/png" href="titleImg.png">
+	<meta property="og:description" content="Calculator Demo">
+	<meta name="description" content="By Ruben Vardanyan">
+	<meta name="theme-color" content="#131417">
+	<!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="phone.css">
+</head>
+<body>
+	<div class="calculator">
+		<a class="abs-box" href="https://ruben-vardanyan.github.io/MyLibrary/">
+			<img class="abs-box" src="LogoL.png">
+		</a>
+		<div class="screen">
+			<div id="fullExp" class="back"></div>
+            <div id="newExpCom" class="panel">0</div>
+		</div>
+		<div class="buttons">
+			<button data-cl value="AC" class="Igrey bold">AC</button>
+			<button data-bcksp value="D" class="Igrey"><img class="backspace" src="bc.svg" alt=""></button>
+			<button data-prc value="%"  class="Igrey"><img class="perc" src="perc.svg" alt=""></button>
+			
+			<button data-oper value="/"  class="Iorange"><i class="fa-solid fa-divide"></i></button>
+			<button data-num value="1" class="InumberColor"><span>1</span></button>
+            <button data-num value="2" class="InumberColor"><span>2</span></button>
+            <button data-num value="3" class="InumberColor"><span>3</span></button>
+			<button data-oper value="*" class="Iorange"><i class="fa-solid fa-xmark"></i></button>
+            <button data-num value="4" class="InumberColor"><span>4</span></button>
+            <button data-num value="5" class="InumberColor"><span>5</span></button>
+            <button data-num value="6" class="InumberColor"><span>6</span></button>
+			<button data-oper value="-" class="Iorange"><i class="fa-solid fa-minus"></i></button>
+            <button data-num value="7" class="InumberColor"><span>7</span></button>
+            <button data-num value="8" class="InumberColor"><span>8</span></button>
+            <button data-num value="9" class="InumberColor"><span>9</span></button>
+			<button data-oper value="+" class="Iorange "><i class="fa-solid fa-plus"></i></button>
+            <button data-num value="." class="InumberColor"><span>.</span></button>
+			<button data-num value="0" class="InumberColor"><span>0</span></button>
+			<button data-plmns value="+-" class="bold size30 Igrey"><i class="fa-solid fa-plus-minus"></i></button>
+			<button data-equals value="="  class="Iequals"><i class="fa-solid fa-equals"></i></button>
+			
+			
+			
+			
+		</div>
+		
+	</div>
+	<script src="calc.js"></script>	
+	<script src="main.js"> </script>
+	<script src="https://kit.fontawesome.com/1c5c8c379f.js" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script> -->
+</body>
+</html>

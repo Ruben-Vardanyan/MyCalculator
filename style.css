@@ -4,8 +4,7 @@ html{
 }
 body{
 	width: 100%;
-	min-height: 100vh;
-  	min-height: -webkit-fill-available;
+	height: calc(100 * var(--vh));
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;

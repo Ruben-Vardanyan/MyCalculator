@@ -1,45 +1,52 @@
-let panel = document.querySelector(".panel");
-let back = document.querySelector(".back");
+//screen
+let board = document.querySelector('.back')
+let panel = document.querySelector('.panel')
+//buttons
 let numbers = document.querySelectorAll('[data-num]')
 let opers = document.querySelectorAll('[data-oper]')
-// let clean = document.querySelector('[data-clear]')
 let equals = document.querySelector('[data-equals]')
-let plmns = document.querySelector('[data-plmns]')
-let prc = document.querySelector('[data-prc]')
+let clear = document.querySelector('[data-cl]')
 let del = document.querySelector('[data-bcksp]')
-let clean = document.querySelector('[data-cl]')
+let plusMinus = document.querySelector('[data-plmns]')
+let prc = document.querySelector('[data-prc]')
 
-let calculator = new Calc(panel,back,clean);
+let calculator = new Calc(panel , board , clear)
 
-clean.addEventListener("click",() => {
-    calculator.clear()
-    calculator.diplay()
+numbers.forEach(number => {
+    number.addEventListener("click" , () => {
+        //console.log(number.value)
+        calculator.write(number.value)
+        calculator.display()
+    })
 })
 
-for(let x of numbers){
-    x.addEventListener("click",() => {
-        calculator.write(x.value)
-        calculator.diplay()
+opers.forEach(oper => {
+    oper.addEventListener("click", () => {
+        //console.log(oper.value)
+        calculator.oper(oper.value)
+        calculator.display()
     })
-}
-for(let o of opers){
-    o.addEventListener("click",() => {
-        calculator.oper(o.value)
-        calculator.diplay()
-    })
-}
+})
+
 equals.addEventListener("click",() => {
-    calculator.calculate(false)
+    calculator.calculate()
 })
-plmns.addEventListener("click",() => {
-    calculator.plmns()
-    calculator.diplay()
+
+clear.addEventListener("click",() => {
+    calculator.ac()
+    calculator.display()
+})
+
+del.addEventListener("click",() => {
+    calculator.del()
+    calculator.display()
+})
+
+plusMinus.addEventListener("click",() => {
+    calculator.plusMinus()
+    calculator.display()
 })
 prc.addEventListener("click",() => {
-    calculator.calculate(true)
-})
-del.addEventListener("click",() => {
-    calculator.delete()
-    calculator.diplay()
-    
+    calculator.prcnt()
+    calculator.display()
 })

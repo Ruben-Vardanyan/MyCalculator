@@ -12,6 +12,8 @@ body{
 	justify-content: center;
 	align-items: center;
 	background: #252525;
+	-webkit-overflow-scrolling: touch;
+	
 	/*  */
 }
 div{

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%; --vh:614px;">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,6 +59,12 @@
 	<script src="calc.js"></script>	
 	<script src="main.js"> </script>
 	<script src="https://kit.fontawesome.com/1c5c8c379f.js" crossorigin="anonymous"></script>
+	<script>
+		window.addEventListener('resize', () => { 
+			document.querySelector(':root').style
+				.setProperty('--vh', window.innerHeight/100 + 'px');
+			})
+	</script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script> -->
 </body>
 </html>
